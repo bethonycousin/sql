@@ -1,0 +1,6 @@
+USE MyGuitarShop;
+
+CREATE ROLE OrderEntry
+GRANT INSERT ON OrderItems TO OrderEntry;
+GRANT UPDATE ON OrderItems TO OrderEntry;
+GRANT SELECT ON OrderItems TO OrderEntry;
